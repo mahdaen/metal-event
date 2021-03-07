@@ -1,0 +1,55 @@
+{
+  "name": "metal-event",
+  "version": "1.0.0",
+  "description": "Add realtime support to existing REST API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rimraf ./dist && npx tsc"
+  },
+  "bin": {
+    "metal-event": "./bin/metal-event"
+  },
+  "author": "Nanang Mahdaen El Agung <mahdaen@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.32",
+    "@types/uuid": "^8.3.0",
+    "@types/ws": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.1.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "querystring": "^0.2.1",
+    "url-pattern": "^1.0.3",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahdaen/metal-event.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "realtime",
+    "support"
+  ],
+  "bugs": {
+    "url": "https://github.com/mahdaen/metal-event/issues"
+  },
+  "homepage": "https://github.com/mahdaen/metal-event#readme"
+}
