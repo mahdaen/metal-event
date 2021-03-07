@@ -1,4 +1,5 @@
 #! /usr/bin/env node
 
 require('dotenv').config();
-require('../dist/bridge')();
+const bridge = require('../dist/bridge');
+bridge.serve();

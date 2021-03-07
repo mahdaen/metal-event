@@ -1,9 +1,9 @@
 import cors from 'cors';
 import Express, { Request, Response } from 'express';
 import { createServer } from 'http';
-import { MetalEvent } from 'server';
 import { v4 as uuid } from 'uuid';
 import { LogLevel } from './logger';
+import { MetalEvent } from './server';
 
 const { DRIVER_PORT, DRIVER_SECRET, SERVER_URL } = process.env;
 
@@ -34,7 +34,7 @@ app.all('/**', cors({
   res.send('Success.');
 });
 
-export default function serve() {
+export function serve() {
   svr.listen(DRIVER_PORT || 3000, () => {
     console.log(`Server listening on port: ${DRIVER_PORT || 3000}`);
   });
